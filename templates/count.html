@@ -1,0 +1,6 @@
+<h1>Count</h1>
+<span>Your text '{{ fulltext }}'</span>
+<span>Is {{ count }} words long.</span><br /><br />
+{% for word, counttotal in worddict %}
+{{ word }} - {{ counttotal }}<br />
+{% endfor %}

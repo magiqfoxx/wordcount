@@ -1,0 +1,9 @@
+<h1>Your word was {{ word }}</h1>
+<span>The length of your word was {{ wordlen }}</span
+><br />
+<br />
+Letters by frequency <br /><br />
+{% for letter, lettercount in letterssorted %}
+{{ letter }} - {{ lettercount }}
+<br />
+{% endfor %}
